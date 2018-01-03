@@ -3,8 +3,470 @@
 <head>
     <meta charset="UTF-8" />
     <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/index1.css" />
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.7-dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="lib/jquery-lchCarousel/jquery.lchCarousel.css" />
+    <script src="lib/jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="lib/jquery-lchCarousel/jquery.lchCarousel.js" type="text/javascript"></script>
+    <script src="lib/ajax.js" type="text/javascript"></script>
 </head>
 <body>
-    
+    <div class="box">
+        <!-- 头部开始 -->
+        <section class="header">
+            <div class="topnav">
+                <div class="content clearfix">
+                    <span class="fl">
+                        <span class="fl">
+                            <i class="glyphicon glyphicon-plane" aria-hidden="true"></i>
+                             广州 
+                            <i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i>
+                        </span>
+                        满百包邮（环郊内）
+                        <a href="" class="link-1">星夜达</a>
+                    </span>
+                    <ul class="list-inline fr">
+                        <li>
+                            <a href="#" class="login">[ 登录 ]</a> , 
+                            <a href="#" class="register">[ 注册有惊喜 ]</a>
+                        </li>
+                        <li>|</li>
+                        <li>
+                            果园公告
+                            <div class="noticelist hide">
+                                <ul class="">
+                                    <li><a href="#">全仓充值活动调整公告</a></li>
+                                    <li><a href="#">全仓充值活动调整公告</a></li>
+                                    <li><a href="#">全仓充值活动调整公告</a></li>
+                                </ul>
+                                <a href="#">查看更多 ></a>
+                            </div>
+                        </li>
+                        <li>|</li>
+                        <li><a href="#">券卡兑换</a></li>
+                        <li>|</li>
+                        <li>
+                            <i class="glyphicon glyphicon-phone" aria-hidden="true"></i>
+                            手机果园
+                            <div class="topcode hide">
+                                <div class="text-center">
+                                    <span class="VI-color2">下载果园app，</span>
+                                        即享果园特价商品
+                                </div>
+                                <dl class="clearfix">
+                                    <dt>
+                                        <img src="img/erweima1.jpg" alt="" />
+                                    </dt>
+                                    <dd>
+                                        <a href="#" target="_blank">
+                                            <img src="img/appstore.jpg" alt="" />
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <img src="img/android.jpg" alt="" />
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt>
+                                        <img src="http://img1.fruitday.com/guan_ewcode1.jpg" alt="" />
+                                    </dt>
+                                    <dd>
+                                        <span class="VI-color2">关注果园微信</span>
+                                        优惠信息实时掌握
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>|</li>
+                        <li>
+                            <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
+                            <b>400-720-0770</b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a href="#" class="navbar-brand logo"></a>
+                        </div>
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav" id="navcon">
+                                <li class="current">
+                                    <a href="/">
+                                        首页
+                                        <span>Home</span>
+                                    </a> <em></em>
+                                </li>
+                                <li class="">
+                                    <a href="/prolist/index/40" target="_blank">
+                                        鲜果
+                                        <span>Fruit</span>
+                                    </a> <em></em>
+                                </li>
+                                <li class="">
+                                    <a href="/prolist/index/277" target="_blank">
+                                        生鲜
+                                        <span>Fresh</span>
+                                    </a>
+                                    <em></em>
+                                </li>
+                                <li class="">
+                                    <a href="/prolist/index/43" target="_blank">
+                                        礼品
+                                        <span>Gift</span>
+                                    </a>
+                                    <em></em>
+                                </li>
+                                <li class="">
+                                    <a href="/member/center" target="_blank">
+                                        会员中心
+                                        <span>VIP Club</span>
+                                    </a>
+                                    <em></em>
+                                </li>
+                            </ul>
+                            <div class="navbar-right">
+                            <div class="topsearch">
+                                <input id="search-keyword" type="search" placeholder="请输入关键字" value="奇异果"/>
+                                <input type="hidden" id="last_keyword" />
+                                <button id="search-button">
+                                    <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+                                </button>
+                                <div class="hotsearch">
+                                    热门：
+                                    <a href="#" target="_blank">橙</a>
+                                    <a href="#" target="_blank">提子</a>
+                                    <a href="#" target="_blank">樱桃</a>
+                                    <a href="#" target="_blank">苹果</a>
+                                </div>
+                                <ul class="subsearch">
+                                    <li>奇异果</li>
+                                    <li>奇异果</li>
+                                    <li>奇异果</li>
+                                    <li>奇异果</li>
+                                    <li>奇异果</li>
+                                    <li>奇异果</li>
+                                    <li>奇异果</li>
+                                    <li>奇异果</li>
+                                </ul>
+                            </div>
+                            <div class="miniCart">
+                                <div id="miniCart">
+                                    <i class="glyphicon glyphicon-heart cartbg" aria-hidden="true"></i>
+                                    <i class="glyphicon glyphicon-shopping-cart cart" aria-hidden="true"></i>
+                                    <span class="cartnum">0</span>
+                                </div>
+                                <div class="cart-order cartcont">
+                                    <i class="glyphicon glyphicon-triangle-top"></i>
+                                    <ul class="list-unstyled">
+                                        
+                                    </ul>
+                                    <div class="mcart-pay clearfix">
+                                        <div class="pull-left">
+                                            共
+                                            <span class="VI-color2">0</span>
+                                            件商品
+                                        </div>
+                                        <div class="pull-right">
+                                            商品小计
+                                            <span class="fs-3 VI-color2">0.00</span>
+                                        </div>
+                                        <button id="btncart" type="button" class="btn btn-success btn-lg btn-block">立即结算</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <!-- 轮播图开始 -->
+        <section class="banner">
+            <div class="frame">
+                
+            </div>
+        </section>
+        <!-- 轮播图js -->
+        <script type="text/javascript">
+            jQuery(function($){
+                $('.frame').lchCarousel({
+                    imgs:['img/banner1.png','img/banner2.png'],
+                    seamless:true,
+                    type:'horizontal' //
+                })
+            })
+        </script>
+        <!-- 中部广告 -->
+        <div class="show-ad">
+            <ul class="clearfix">
+                <li><a href="#"><img src="img/ad1.jpg" alt="" /></a></li>
+                <li><a href="#"><img src="img/ad2.jpg" alt="" /></a></li>
+                <li><a href="#"><img src="img/ad3.jpg" alt="" /></a></li>
+                <li><a href="#"><img src="img/ad4.jpg" alt="" /></a></li>
+            </ul>
+        </div>
+        <!-- 礼品卡券 -->
+        <div class="fruit-kinds">
+            <div class="til clearfix">
+                <a href="#" target="_blank" class="more">更多 &gt;</a>
+                <ul class="pull-right">
+                </ul>
+                <div class="textPic">
+                    <img class="lazy" src="img/lipinkaquan.png">
+                </div>
+            </div>
+            <div class="good-list clearfix">
+                
+            </div>
+            <!-- ajax请求加载商品数据 -->
+            <script type="text/javascript">
+                document.addEventListener('DOMContentLoaded',function(){
+                    var goods = document.querySelector('.good-list');
+                        ajax({
+                        type:'get',
+                        url:'http:./api/goodslist.json',
+                        success:function(res){
+                            var ul = document.createElement('ul');
+                            ul.className = "clearfix";
+                            ul.innerHTML = res.map(function(item){
+                                if(item['id'] == "g01"){
+                                    return `
+                                        <li class="pro_list">
+                                            <div class="s-img">
+                                                <a><img src="${item.imgurl}"></a>
+                                            </div>
+                                            <div class="s-info">
+                                                <div class="s-name">
+                                                    ${item.title}
+                                                </div>
+                                                <div class="s-unit">
+                                                    ￥${item.price}/礼盒
+                                                </div>
+                                                <div class="s-che">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="pro_list_pos">
+                                                <span class="pro_list_span">新品</span>
+                                            </div>
+                                        </li>
+                                    `
+                                }
+                            }).join('');
+                            goods.appendChild(ul);
+                        }
+                    });
+                })
+            </script>
+        </div>
+        <!-- 家庭量贩 -->
+        <div class="fruit-kinds">
+            <div class="til clearfix">
+                <a href="#" target="_blank" class="more">更多 &gt;</a>
+                <ul class="pull-right">
+                </ul>
+                <div class="textPic">
+                    <img class="lazy" src="img/jiatingliangban.png">
+                </div>
+            </div>
+            <div class="good-list clearfix g1">
+                
+            </div>
+            <!-- ajax请求加载商品数据 -->
+            <script type="text/javascript">
+                document.addEventListener('DOMContentLoaded',function(){
+                    var goods = document.querySelector('.g1');
+                        ajax({
+                        type:'get',
+                        url:'http:./api/goodslist.json',
+                        success:function(res){
+                            var ul = document.createElement('ul');
+                            ul.className = "clearfix";
+                            ul.innerHTML = res.map(function(item){
+                                if(item['id'] == "g02"){
+                                    return `
+                                        <li class="pro_list">
+                                            <div class="s-img">
+                                                <a><img src="${item.imgurl}"></a>
+                                            </div>
+                                            <div class="s-info">
+                                                <div class="s-name">
+                                                    ${item.title}
+                                                </div>
+                                                <div class="s-unit">
+                                                    ￥${item.price}/${item.unit}
+                                                </div>
+                                                <div class="s-che">
+                                                    
+                                                </div>
+                                            </div>
+                                        </li>
+                                    `
+                                }
+                            }).join('');
+                            goods.appendChild(ul);
+                        }
+                    });
+                })
+            </script>
+        </div>
+        <!-- 全球鲜果 -->
+        <div class="fruit-kinds">
+                <div class="til clearfix">
+                    <a href="#" target="_blank" class="more">更多 &gt;</a>
+                    <ul class="pull-right">
+                    </ul>
+                    <div class="textPic">
+                        <img class="lazy" src="img/t2.png">
+                    </div>
+                </div>
+                <div class="good-list clearfix g2">
+                    
+                </div>
+                <!-- ajax请求加载商品数据 -->
+                <script type="text/javascript">
+                    document.addEventListener('DOMContentLoaded',function(){
+                        var goods = document.querySelector('.g2');
+                            ajax({
+                            type:'get',
+                            url:'http:./api/goodslist.json',
+                            success:function(res){
+                                var ul = document.createElement('ul');
+                                ul.className = "clearfix";
+                                ul.innerHTML = res.map(function(item){
+                                    if(item['id'] == "g03"){
+                                        return `
+                                            <li class="pro_list">
+                                                <div class="s-img">
+                                                    <a><img src="${item.imgurl}"></a>
+                                                </div>
+                                                <div class="s-info">
+                                                    <div class="s-name">
+                                                        ${item.title}
+                                                    </div>
+                                                    <div class="s-unit">
+                                                        ￥${item.price}/${item.unit}
+                                                    </div>
+                                                    <div class="s-che">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        `
+                                    }
+                                }).join('');
+                                goods.appendChild(ul);
+                            }
+                        });
+                    })
+                </script>
+        </div>
+        <!-- 生鲜美食 -->
+        <div class="fruit-kinds">
+                <div class="til clearfix">
+                    <a href="#" target="_blank" class="more">更多 &gt;</a>
+                    <ul class="pull-right">
+                    </ul>
+                    <div class="textPic">
+                        <img class="lazy" src="img/t3.png">
+                    </div>
+                </div>
+                <div class="good-list clearfix g3">
+                    
+                </div>
+                <!-- ajax请求加载商品数据 -->
+                <script type="text/javascript">
+                    document.addEventListener('DOMContentLoaded',function(){
+                        var goods = document.querySelector('.g3');
+                            ajax({
+                            type:'get',
+                            url:'http:./api/goodslist.json',
+                            success:function(res){
+                                var ul = document.createElement('ul');
+                                ul.className = "clearfix";
+                                ul.innerHTML = res.map(function(item){
+                                    if(item['id'] == "g04"){
+                                        return `
+                                            <li class="pro_list">
+                                                <div class="s-img">
+                                                    <a><img src="${item.imgurl}"></a>
+                                                </div>
+                                                <div class="s-info">
+                                                    <div class="s-name">
+                                                        ${item.title}
+                                                    </div>
+                                                    <div class="s-unit">
+                                                        ￥${item.price}/${item.unit}
+                                                    </div>
+                                                    <div class="s-che">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        `
+                                    }
+                                }).join('');
+                                goods.appendChild(ul);
+                            }
+                        });
+                    })
+                </script>
+        </div>
+        <!--底部 -->
+        <section class="toolbarfoot">
+            <a href="#" class="kq"></a>
+            <a href="#" class="kf"></a>
+            <a href="#" class="return-top"></a>
+        </section>
+        <section class="footer">
+            <div class="content">
+                <ul class="list-inline clearfix">
+                    <li class="p-icon"></li>
+                    <li class="p-icon"></li>
+                    <li class="p-icon"></li>
+                    <li class="p-icon"></li>
+                </ul>
+                <div class="footbar clearfix">
+                    <div class="block4">
+                        <div class="logo"></div>
+                        <div class="tel">
+                            <img src="img/guan_tel.png" alt="" />
+                        </div>
+                        <div class="font-gray fs-4">
+                            <span class="font-color">电话客服</span>
+                            9:00 - 21:00
+                            <br />
+                            <span class="font-color">在线客服</span>
+                            8:00 - 24:00
+                        </div>
+                    </div>
+                    <ul class="block2">
+                        <li><img src="img/erweima1.jpg" alt="" /><span>天天果园官方微信</span></li>
+                        <li><img src="img/erweima2.jpg" alt="" /><span>天天果园APP</span></li>
+                    </ul>
+                    <ul class="block3 list-unstyled">
+                        <li><h4>购物指南</h4><a href="/help/index/725">新用户注册</a><a href="/help/index/726">在线下单</a><a href="/help/index/727">支付方式</a></li>
+                        <li><h4>配送说明</h4><a href="/help/index/728">运费说明</a><a href="/help/index/729">运费方式</a><a href="/help/index/730">发票说明</a></li>
+                        <li><h4>售后服务</h4><a href="/help/index/731">退换货规则</a><a href="/help/index/732">服务保障承诺</a><a href="/help/index/733">验货与签收</a></li>
+                        <li><h4>企业服务</h4><a href="/help/index/734">企业订购</a><a href="/help/index/735">公司简介</a><a href="/help/index/736">定制专区</a></li>
+                    </ul>
+                </div>
+                <div class="copyright text-center">
+                    <p class="fs-2 font-color">
+                        版权所有 &copy;2018上海天天鲜果电子商务有限公司&nbsp;&nbsp;保留所有权利 | <a href="#" style="color:#999;" target="_blank">沪ICP备12042163</a>
+                    </p>
+                    <p class="fs-2 VI-color2">天天果园&nbsp;&nbsp;鲜果网购</p>
+                    <div>
+                        <a href="#"><img src="img/guan_shgs.gif" alt="" /></a>
+                        <a href="#"><img src="img/guan_wgdjp.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>  
+        </section>
+    </div>
 </body>
 </html>

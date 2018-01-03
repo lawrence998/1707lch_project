@@ -1,0 +1,10 @@
+.lch-carousel ul{padding:0;margin:0;list-style: none;}
+.lch-carousel img{display: block;}
+.lch-carousel{position:relative;width:810px;height:320px;overflow:hidden;}
+.lch-carousel ul{position:absolute;overflow:hidden;}
+.lch-carousel ul li{float:left;}
+.lch-carousel .page{position:absolute;left:50%;bottom:0;padding:10px;transform:translate(-50%,0);}
+.lch-carousel .page span{display:inline-block;margin:0 5px;width:30px;height:30px;line-height:30px;background-color:rgba(0,0,0,.6);text-align:center;color:#fff;border-radius: 50%;box-shadow:0 0 10px rgba(0,0,0,.5);}
+.lch-carousel .page span.active{background-color: rgba(255,0,0,.8);}
+.lch-carousel>span{position: absolute;top:50%;left:10px;margin-top:-25px;height:50px;line-height:50px;padding:15px;background-color: rgba(0,0,0,.3);color:#fff;}
+.lch-carousel>span.btn-next{left:auto;right:10px;}
