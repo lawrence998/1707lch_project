@@ -46,7 +46,7 @@ function ajax(options){
         var script = document.createElement('script');
 
         // 判断opt.url中是否存在?
-        opt.url += opt.url.indexOf('?')>=0 ? params : '?'+params;
+        opt.url += opt.url.indexOf('?')>=0 ? params : '?'+ params;
 
         script.src = opt.url + '&'+opt.jsonpCallbackName+'='+fnName;
 
@@ -81,6 +81,7 @@ function ajax(options){
             }catch(err){
                 res = res;
             }
+            // res = JSON.parse(res);
 
             // if(typeof opt.success === 'function'){
             //  opt.success(res);
@@ -127,3 +128,8 @@ ajax.jsonp = function(options){
 //  success:250
 // })
 // ajax.get()
+function type(data){
+    //data.toString()
+    //"[Object Array]"
+    return Object.prototype.toString.call(data).slice(8,-1).toLowerCase();
+}

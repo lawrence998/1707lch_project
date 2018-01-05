@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>天天果园注册页面</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/register.css" />
+</head>
+<body>
+    <div class="box">
+        <!-- 头部开始 -->
+        <section class="header">
+            <div class="topnav">
+                <div class="content clearfix">
+                    <span class="fl">
+                        <span class="fl">
+                            <i class="glyphicon glyphicon-plane" aria-hidden="true"></i>
+                             广州 
+                            <i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i>
+                        </span>
+                        满百包邮（环郊内）
+                        <a href="" class="link-1">星夜达</a>
+                    </span>
+                    <ul class="list-inline fr">
+                        <li>
+                            <a href="#" class="login1">[ 登录 ]</a> , 
+                            <a href="#" class="register1">[ 注册有惊喜 ]</a>
+                        </li>
+                        <li>|</li>
+                        <li class="notice1">
+                            果园公告
+                            <div class="noticelist hide">
+                                <ul class="">
+                                    <li><a href="#">全仓充值活动调整公告</a></li>
+                                    <li><a href="#">全仓充值活动调整公告</a></li>
+                                    <li><a href="#">全仓充值活动调整公告</a></li>
+                                </ul>
+                                <a href="#">查看更多 ></a>
+                            </div>
+                        </li>
+                        <li>|</li>
+                        <li><a href="#">券卡兑换</a></li>
+                        <li>|</li>
+                        <li class="notice2">
+                            <i class="glyphicon glyphicon-phone" aria-hidden="true"></i>
+                            手机果园
+                            <div class="topcode hide">
+                                <div class="text-center">
+                                    <span class="VI-color2">下载果园app，</span>
+                                        即享果园特价商品
+                                </div>
+                                <dl class="clearfix">
+                                    <dt>
+                                        <img src="../img/erweima1.jpg" alt="" />
+                                    </dt>
+                                    <dd>
+                                        <a href="#" target="_blank">
+                                            <img src="../img/appstore.jpg" alt="" />
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <img src="../img/android.jpg" alt="" />
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt>
+                                        <img src="http://img1.fruitday.com/guan_ewcode1.jpg" alt="" />
+                                    </dt>
+                                    <dd>
+                                        <span class="VI-color2">关注果园微信</span>
+                                        优惠信息实时掌握
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>|</li>
+                        <li>
+                            <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
+                            <b>400-720-0770</b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a href="#" class="navbar-brand logo"></a>
+                        </div>
+                        <div class="collapse navbar-collapse"></div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <!-- 注册 -->
+        <div class="w-1000 pt-50">
+            <p class="member">注册会员</p>
+            <div class="login-sec clearfix">
+                <div class="login-left fl">
+                    <img src="../img/huiyuan.jpg" alt="" />
+                    <div class="login">
+                        <a href="./login.html" class="btn btn-primary btn-lg active login-btn" title="点击此按钮，登录会员账号">会员登录></a>
+                    </div>
+                </div>
+                <div class="login-right fr">
+                    <div class="login-form">
+                        <ul>
+                            <li class="clearfix">
+                                <div class="text02 all pull-left">
+                                  <span class="mobile">手机号</span>
+                                </div>
+                                <div class="send-yanzm pull-left">
+                                  <input type="text" class="form-control" id="user">
+                                  <span class="true"></span>
+                                </div> 
+                            </li>
+
+                            <li class="clearfix">
+                                <div class="text04 all pull-left">
+                                 <span class="code">密码</span>
+                                </div>
+                                <div class="password pull-left">
+                                  <input type="password" placeholder="请输入6-20位号码字符"class="form-control" id="passwd" >
+                                  <span class="true"></span>
+                                </div>
+                            </li>
+              
+                            <li class="clearfix">
+                                <div class="text05 all pull-left">
+                                <span class="code">确认密码</span>
+                                </div>
+                                <div class="entrue pull-left">
+                                   <input type="password" placeholder="请输入6-20位号码字符" class="pull-left form-control" id="Apasswd">
+                                   <span class="true"></span>
+                                </div>
+                            </li>
+
+                            <li class="clearfix">
+                                <div class="text01 all pull-left">
+                                    <span class="form1">验证码</span>
+                                </div>
+                                <div class="yanzm pull-left">
+                                    <input type="text text-01 " class="pull-left form-control" id="verify"><span class="true"></span>
+                                    <span class="yanzm-num"></span>
+                                    <span class="update auth-img"></span>
+                                </div>
+                            </li>
+
+                            <li class="clearfix">
+                                <div class="text03 all pull-left">
+                                 <span class="text">手机验证码</span>
+                                </div>
+                                <div class="mobile-yanzm pull-left">
+                                  <input type="text" class="form-control" disabled id="telverify"/><span class="true"></span>
+                                  <div class="send" id="TestGetCode"><span class="send-num">发送验证码</span><span class="hide">还剩<b id="timeout">60</b>秒</span></div>
+
+                                </div>
+                            </li>
+
+                            <li class="clearfix">
+                                <div class="fruit-login pull-right">
+                                    <div class="fr-regist pull-left">
+                                       <a href="../index.html" class="btn-lg btn-lg1" role="button" id="submit">注册</a>
+                                    </div>
+                                    <div class="fr-login pull-left">
+                                        <a href="./login.html" class="btn-lg" role="button">会员登录</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 表单验证 -->
+        <script src="../js/require.js" data-main="../js/register"></script>
+        <!-- 底部 -->
+        <section class="toolbarfoot">
+            <a href="#" class="kq"></a>
+            <a href="#" class="kf"></a>
+            <a href="#" class="return-top"></a>
+        </section>
+        <section class="footer">
+            <div class="content">
+                <ul class="list-inline clearfix">
+                    <li class="p-icon"></li>
+                    <li class="p-icon"></li>
+                    <li class="p-icon"></li>
+                    <li class="p-icon"></li>
+                </ul>
+                <div class="footbar clearfix">
+                    <div class="block4">
+                        <div class="logo"></div>
+                        <div class="tel">
+                            <img src="../img/guan_tel.png" alt="" />
+                        </div>
+                        <div class="font-gray fs-4">
+                            <span class="font-color">电话客服</span>
+                            9:00 - 21:00
+                            <br />
+                            <span class="font-color">在线客服</span>
+                            8:00 - 24:00
+                        </div>
+                    </div>
+                    <ul class="block2">
+                        <li><img src="../img/erweima1.jpg" alt="" /><span>天天果园官方微信</span></li>
+                        <li><img src="../img/erweima2.jpg" alt="" /><span>天天果园APP</span></li>
+                    </ul>
+                    <ul class="block3 list-unstyled">
+                        <li><h4>购物指南</h4><a href="/help/index/725">新用户注册</a><a href="/help/index/726">在线下单</a><a href="/help/index/727">支付方式</a></li>
+                        <li><h4>配送说明</h4><a href="/help/index/728">运费说明</a><a href="/help/index/729">运费方式</a><a href="/help/index/730">发票说明</a></li>
+                        <li><h4>售后服务</h4><a href="/help/index/731">退换货规则</a><a href="/help/index/732">服务保障承诺</a><a href="/help/index/733">验货与签收</a></li>
+                        <li><h4>企业服务</h4><a href="/help/index/734">企业订购</a><a href="/help/index/735">公司简介</a><a href="/help/index/736">定制专区</a></li>
+                    </ul>
+                </div>
+                <div class="copyright text-center">
+                    <p class="fs-2 font-color">
+                        版权所有 &copy;2018上海天天鲜果电子商务有限公司&nbsp;&nbsp;保留所有权利 | <a href="#" style="color:#999;" target="_blank">沪ICP备12042163</a>
+                    </p>
+                    <p class="fs-2 VI-color2">天天果园&nbsp;&nbsp;鲜果网购</p>
+                    <div>
+                        <a href="#"><img src="../img/guan_shgs.gif" alt="" /></a>
+                        <a href="#"><img src="../img/guan_wgdjp.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>  
+        </section>
+    </div>
+</body>
+</html>

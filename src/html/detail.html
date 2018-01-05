@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>首页</title>
-    <link rel="stylesheet" type="text/css" href="css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="css/index.css"/>
-    <link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.7-dist/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="lib/jquery-lchCarousel/jquery.lchCarousel.css" />
+    <title>商品详情页</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/details.css" />
+</head>
 <body>
     <div class="box">
         <!-- 头部开始 -->
@@ -52,14 +52,14 @@
                                 </div>
                                 <dl class="clearfix">
                                     <dt>
-                                        <img src="img/erweima1.jpg" alt="" />
+                                        <img src="../img/erweima1.jpg" alt="" />
                                     </dt>
                                     <dd>
                                         <a href="#" target="_blank">
-                                            <img src="img/appstore.jpg" alt="" />
+                                            <img src="../img/appstore.jpg" alt="" />
                                         </a>
                                         <a href="#" target="_blank">
-                                            <img src="img/android.jpg" alt="" />
+                                            <img src="../img/android.jpg" alt="" />
                                         </a>
                                     </dd>
                                 </dl>
@@ -179,83 +179,75 @@
                 </nav>
             </div>
         </section>
+        <div class="content typepage clearfix">
+            <div class="bread">
+                <strong class="lvse"><a href="#">首页</a></strong>
+                <span class="lvse"></span>
+                <span class="huise"></span>
+            </div>
+            <!-- 焦点图开始 -->
+            <div id="MyFocus" class="pull-left">
+                <ul class="dianul">
+                    
+                </ul>
+                <ul class="tuul">
+                    
+                </ul>
+            </div>
+            <!-- 焦点图结束 -->
 
-        <!-- 轮播图开始 -->
-        <section class="banner">
-            <div class="frame">
-                
-            </div>
-        </section>
-        <!-- 轮播图js -->
-        <!-- 中部广告 -->
-        <div class="show-ad">
-            <ul class="clearfix">
-                <li><a href="#"><img src="img/ad1.jpg" alt="" /></a></li>
-                <li><a href="#"><img src="img/ad2.jpg" alt="" /></a></li>
-                <li><a href="#"><img src="img/ad3.jpg" alt="" /></a></li>
-                <li><a href="#"><img src="img/ad4.jpg" alt="" /></a></li>
-            </ul>
-        </div>
-        <!-- 礼品卡券 -->
-        <div class="fruit-kinds">
-            <div class="til clearfix">
-                <a href="#" target="_blank" class="more">更多 &gt;</a>
-                <ul class="pull-right">
-                </ul>
-                <div class="textPic">
-                    <img class="lazy" src="img/lipinkaquan.png">
-                </div>
-            </div>
-            <div class="good-list clearfix">
-                
-            </div>
-            <!-- ajax请求加载商品数据 -->
-        </div>
-        <!-- 家庭量贩 -->
-        <div class="fruit-kinds">
-            <div class="til clearfix">
-                <a href="#" target="_blank" class="more">更多 &gt;</a>
-                <ul class="pull-right">
-                </ul>
-                <div class="textPic">
-                    <img class="lazy" src="img/jiatingliangban.png">
-                </div>
-            </div>
-            <div class="good-list clearfix g1">
-                
-            </div>
-            <!-- ajax请求加载商品数据 -->
-        </div>
-        <!-- 全球鲜果 -->
-        <div class="fruit-kinds">
-                <div class="til clearfix">
-                    <a href="#" target="_blank" class="more">更多 &gt;</a>
-                    <ul class="pull-right">
-                    </ul>
-                    <div class="textPic">
-                        <img class="lazy" src="img/t2.png">
+            <!-- 产品信息 -->
+            <div class="product-info pull-left">
+                <div class="country clearfix">
+                    <div class="guoqi pull-left gq_66"></div>
+                    <div class="name pull-left">
+                        <h3>荷兰青啤梨</h3>
+                        <p class="title_describeapp">
+                            酥到挖着吃 宝贝辅食推荐                    
+                        </p>
                     </div>
                 </div>
-                <div class="good-list clearfix g2">
-                    
-                </div>
-                <!-- ajax请求加载商品数据 -->
-        </div>
-        <!-- 生鲜美食 -->
-        <div class="fruit-kinds">
-                <div class="til clearfix">
-                    <a href="#" target="_blank" class="more">更多 &gt;</a>
-                    <ul class="pull-right">
-                    </ul>
-                    <div class="textPic">
-                        <img class="lazy" src="img/t3.png">
+                <div class="price-info">
+                    <div class="price01 clearfix">
+                        
+                    </div>
+                    <div class="guige clearfix">
+                        
+                    </div>
+                    <div class="send clearfix">
+                        
+                    </div>
+                    <div class="number clearfix">
+                        
+                    </div>
+                    <div class="buy clearfix">
+                        
                     </div>
                 </div>
-                <div class="good-list clearfix g3">
-                    
+                <div class="comment clearfix">
+                    <div class="pull-left clearfix">
+                        <h5 class="pull-left">产地</h5>
+                        <span class="pull-left">荷兰</span>
+                    </div>
+                    <div class="pull-left clearfix">
+                        <h5 class="pull-left">存储方法</h5>
+                        <span class="pull-left">0°冷藏</span>
+                    </div>
+                    <div class="pull-left clearfix">
+                        <h5 class="pull-left">备注</h5>
+                        <span class="pull-left">
+                            单个重165-220g
+                        </span>
+                    </div>
+                    <div class="pull-left clearfix">
+                        <h5 class="pull-left">商品编号</h5>
+                        <span class="pull-left" id="product_no">201412014</span>
+                    </div>
                 </div>
+            </div>
+            <!-- 产品信息结束 -->
+            
         </div>
-        
         <!--底部 -->
         <section class="toolbarfoot">
             <a href="#" class="kq"></a>
@@ -274,7 +266,7 @@
                     <div class="block4">
                         <div class="logo"></div>
                         <div class="tel">
-                            <img src="img/guan_tel.png" alt="" />
+                            <img src="../img/guan_tel.png" alt="" />
                         </div>
                         <div class="font-gray fs-4">
                             <span class="font-color">电话客服</span>
@@ -285,8 +277,8 @@
                         </div>
                     </div>
                     <ul class="block2">
-                        <li><img src="img/erweima1.jpg" alt="" /><span>天天果园官方微信</span></li>
-                        <li><img src="img/erweima2.jpg" alt="" /><span>天天果园APP</span></li>
+                        <li><img src="../img/erweima1.jpg" alt="" /><span>天天果园官方微信</span></li>
+                        <li><img src="../img/erweima2.jpg" alt="" /><span>天天果园APP</span></li>
                     </ul>
                     <ul class="block3 list-unstyled">
                         <li><h4>购物指南</h4><a href="/help/index/725">新用户注册</a><a href="/help/index/726">在线下单</a><a href="/help/index/727">支付方式</a></li>
@@ -301,14 +293,12 @@
                     </p>
                     <p class="fs-2 VI-color2">天天果园&nbsp;&nbsp;鲜果网购</p>
                     <div>
-                        <a href="#"><img src="img/guan_shgs.gif" alt="" /></a>
-                        <a href="#"><img src="img/guan_wgdjp.png" alt="" /></a>
+                        <a href="#"><img src="../img/guan_shgs.gif" alt="" /></a>
+                        <a href="#"><img src="../img/guan_wgdjp.png" alt="" /></a>
                     </div>
                 </div>
             </div>  
         </section>
-        <!-- ajax请求加载商品数据 -->
-        <script src="./js/require.js" data-main="./js/index"></script>
     </div>
 </body>
 </html>

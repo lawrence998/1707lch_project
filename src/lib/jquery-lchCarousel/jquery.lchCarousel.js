@@ -113,6 +113,7 @@
                 },
                 move:function(){
                     if(opt.autoPlay){
+                        clearInterval($self.timer);
                         $self.timer = setInterval(function(){
                             opt.index++;
                             lch.show();
