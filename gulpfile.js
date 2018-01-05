@@ -4,7 +4,7 @@ let sass = require('gulp-sass');
 browserSync = require('browser-sync');
 
 let path = {
-    sass:'./src/sass/list.scss',
+    sass:'./src/sass/details.scss',
     js:'./src/js/*.js'
 }
 

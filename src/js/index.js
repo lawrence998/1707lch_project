@@ -42,8 +42,6 @@ require(['config'],function(){
             })
         });
 
-
-
         var goods = document.querySelector('.good-list');
         ajax({
             type:'get',
@@ -178,7 +176,5 @@ require(['config'],function(){
                 goods3.appendChild(ul);
             }
         });
-
-        
     })
 })

@@ -182,8 +182,12 @@
         <div class="content typepage clearfix">
             <div class="bread">
                 <strong class="lvse"><a href="#">首页</a></strong>
-                <span class="lvse"></span>
-                <span class="huise"></span>
+                <span class="lvse">
+                    ><a href="list.html">新鲜水果</a>>
+                </span>
+                <span class="huise">
+                    
+                </span>
             </div>
             <!-- 焦点图开始 -->
             <div id="MyFocus" class="pull-left">
@@ -209,19 +213,70 @@
                 </div>
                 <div class="price-info">
                     <div class="price01 clearfix">
-                        
+                        <div class="box pull-left">
+                            <h5 class="pull-left">果园价</h5>
+                            <span class="pull-left price-sp" id="jq-price"></span>
+                        </div>
+
+                        <div class="box2 pull-right">
+                            <div class="weixin">
+                                <img src="http://qr.liantu.com/api.php?el=l&w=280&m=5&text=http://m.fruitday.com/detail/index/28373"/>
+                            </div>
+                        </div>
                     </div>
                     <div class="guige clearfix">
-                        
+                        <h5 class="pull-left">规格</h5>
+                        <div class="zhuang pull-left">
+                            <span data-old-price="19.90" data-price="19.90" data-pid="28373" data-ppid="31565" data-product_no="201412014" data-outofstock="0" class="pull-left current">4个</span>
+                        </div>
                     </div>
                     <div class="send clearfix">
-                        
+                        <h5 class="pull-left">配送至</h5>
+                        <div class="btn-group pull-left">
+                            <div class="btn btn-default dropdown-toggle" aria-expanded="false">
+                                <p id="send-area">上海</p>
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                                <span class="icon"></span>
+                            </div>
+                            <div class="dropdown-menu" role="menu">
+                                <div class="dropdown-content">
+                                    <div class="dropdown-nav">
+                                        <ul class="tab">
+                                            <li id="province_item"><a class="hover" href="javascript:void(0);"><em>请选择</em><i></i></a></li>
+                                            <li id="city_item" style="display: none"><a href="javascript:void(0);"><em>请选择</em><i></i></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="fd-area active" id="stock_province_item">
+                                        
+                                    </div>
+                                    <div class="fd-area" id="stock_city_item">
+                                    
+                                    </div>
+                                    <div class="fd-area" id="dropdown-town"></div>
+                                </div>
+                                <div class="dropdown-close"></div>
+                            </div>
+                        </div>
+                        <span class="pull-left have">有货</span>  
                     </div>
+                   
                     <div class="number clearfix">
-                        
+                        <h5 class="pull-left">数量</h5>
+                        <div class="goods-buy01 pull-left clearfix">
+                            <span id="redu" class="num pull-left">-</span>
+                            <input class="pull-left" id="add" type="tel" value="1">
+                            <span id="add1" class="num pull-left">+</span>
+                        </div>
                     </div>
                     <div class="buy clearfix">
-                        
+                        <div class="fr-buy pull-left">
+                            <a href="javascript:;" class="btn btn-primary btn-lg active " role="button" title="点击此按钮，到下一步确认购买信息">立即购买</a>
+                        </div>
+                        <div class="fr-add pull-left">
+                            <a href="javascript:;" class="btn btn-primary btn-lg active " title="加入购物车" role="button" >
+                            加入购物车
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="comment clearfix">
@@ -246,7 +301,142 @@
                 </div>
             </div>
             <!-- 产品信息结束 -->
-            
+            <div class="cl h68"></div>
+            <!-- 评论开始 -->
+            <div class="assess clearfix">
+                <div class="leftpart pull-left">
+                    <div class="good-details clearfix js_fixed">
+                        <span class="cur pull-left" draggable="true">商品简介</span>
+                        <span class="pull-left">
+                            顾客评论 <b id="comment_total_top">(0)</b>
+                        </span>
+                        <a href="javascript:;" class="pull-right btn btn-primary btn-lg active " title="加入购物车" role="button">
+                            加入购物车 <i class="tb-iconfont pull-left"></i>
+                            <div class="thefruit clearfix">
+                                <div class="fruitleft pull-left">
+                                    <img src="https://imgqn3.fruitday.com/images/product_pic/2048/1/1-180x180-2048-BB2HHUX7.jpg"/>
+                                </div>
+                                <div class="fruitright pull-left">
+                                    <h5>荷兰青啤梨</h5>
+                                    <p>￥19.90 / 4个</p>
+                                    <p class="frnum"></p>
+                                    <div class="anniu">
+                                        确认
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="good-comments">
+                        <ul class="no1">
+                            <li>
+                                <div class="app-detail">
+                                    <div class="dynamic-prop-table">
+                                        <dl>
+                                            <dt>产地</dt>
+                                            <dd>荷兰</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>营养元素</dt>
+                                            <dd>蛋白质，果胶，维生素C</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>储藏方法</dt>
+                                            <dd>0°及以上冷藏</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>单重</dt>
+                                            <dd>165-220g</dd>
+                                        </dl>
+                                    </div>
+                                    <img src="" alt="" />
+                                    <img src="" alt="" />
+                                </div>
+
+                            </li>
+                        </ul>
+                        <ul class="no2">
+                            <div class="detail-title clearfix">
+                                <div class="detail-title00 pull-left">
+                                    <p class="p1" id="grade_good_another_left">0%</p>
+                                    <p class="p2 mar-8">好评度</p>
+                                </div>
+                                <div class="detail-title01 pull-left">
+                                    <div class="pl-user clearfix">
+                                        <div class="green-user pull-left">不错哟</div>
+                                        <div class="dengji-good pull-left">
+                                            <div id="grade_good_another" style="width: 0%;">
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="dengji-number pull-left" id="good_rate_another">0%</div>
+                                    </div>
+                                    <div class="pl-user clearfix">
+                                        <div class="green-user pull-left">待提高</div>
+                                        <div class="dengji-good pull-left">
+                                            <div id="grade_normal_another" style="width: 0%;"></div>
+                                        </div>
+                                        <div class="dengji-number pull-left" id="normal_rate_another">0%</div>
+                                    </div>
+                                    <div class="pl-user clearfix">
+                                        <div class="green-user pull-left">小失落</div>
+                                        <div class="dengji-good pull-left">
+                                            <div id="grade_bad_another" style="width: 0%;"></div>
+                                        </div>
+                                        <div class="dengji-number pull-left" id="bad_rate_another">0%</div>
+                                    </div>
+                                </div>
+                                <div class="detail-title02 pull-left clearfix">
+                                    <p class="">发布评价即可获5积分，</p>
+                                    <p class="w-375">APP上传图片并晒单即可获得5积分。</p>
+                                </div>
+                            </div>
+                            <div class="detail-user">
+                                <div class="detail-user-title  clearfix">
+                                    <ul>
+                                        <li  val="" id="c_all_another" class="now-gray pull-left">
+                                            <s class="fpicon"></s>
+                                            全部评论(
+                                            <span id="comment_total">0</span>
+                                            )
+                                        </li>
+                                        <li val="good" id="c_good_another" class="pull-left">
+                                            <s class="fpicon"></s>
+                                            不错呦(
+                                            <span id="comment_total_good">0</span>
+                                            )
+                                        </li>
+                                        <li val="normal" id="c_normal_another" class="pull-left">
+                                            <s class="fpicon"></s>
+                                            待提高(
+                                            <span id="comment_total_normal">0</span>
+                                            )
+                                        </li>
+                                        <li val="bad" id="c_bad_another" class="pull-left">
+                                            <s class="fpicon"></s>
+                                            小失落(
+                                            <span id="comment_total_bad">0</span>
+                                            )
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="detail-allsays" id="comment_box">
+                                    <div class="nocomm">正在加载 ......</div>
+                                </div>
+                                <div class="btn-toolbar" role="toolbar" >
+                                    <div class="main" id="comment_box_page">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="rightpart pull-right">
+                    <h5>最近浏览过</h5>
+                    <ul></ul>
+                </div>
+            </div>
         </div>
         <!--底部 -->
         <section class="toolbarfoot">

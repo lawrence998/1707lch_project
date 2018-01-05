@@ -1,0 +1,205 @@
+.typepage { padding-top: 50px; }
+
+.lvse { color: #64a131; }
+
+.huise { color: #999999; }
+
+.fr-buy { margin-right: 11px; margin-left: 70px; }
+
+#send-area { display: inline-block; }
+
+p { margin: 0; }
+
+h5 { margin: 0; }
+
+ul { margin: 0px; padding: 0px; }
+
+.bread { font: 14px/100% 'Hiragino Sans GB','Microsoft YaHei',sans-serif; margin-bottom: 20px; }
+
+.bread a { color: #64a131; text-decoration: none; }
+
+#MyFocus { width: 700px; height: 560px; position: relative; overflow: hidden; }
+
+#MyFocus .dianul { list-style: none; float: left; width: 140px; height: 560px; padding: 0px; margin-bottom: 0px; margin: 0px; }
+
+#MyFocus .dianul li { cursor: pointer; width: 138px; height: 138px; margin-bottom: 2px; position: relative; }
+
+#MyFocus .dianul li img { width: 100%; height: 100%; }
+
+#MyFocus .dianul li span { position: absolute; top: 0; left: 0; z-index: 2; width: 100%; height: 100%; display: none; }
+
+#MyFocus .dianul li.cur span { display: block; }
+
+#MyFocus .tuul { list-style: none; float: left; width: 560px; height: 560px; padding: 0px; margin-bottom: 0px; margin: 0px; position: relative; }
+
+#MyFocus .tuul li { display: none; }
+
+#MyFocus .tuul li.cur { display: block; }
+
+#MyFocus .tuul li a { display: block; width: 560px; height: 560px; }
+
+#MyFocus .tuul li img { width: 560px; height: 560px; }
+
+.product-info { padding-left: 28px; width: 580px; padding-top: 20px; }
+
+.product-info .country { width: 532px; }
+
+.product-info .country .guoqi { margin-right: 12px; margin-top: 5px; width: 44px; height: 30px; background: url(../img/icons.png) no-repeat; }
+
+.product-info .country .gq_66 { background-position: -449px -705px; }
+
+.product-info .country .name { width: 470px; }
+
+.product-info .country .name h3 { /* height: 80px; */ margin: 0px; font-family: 'Hiragino Sans GB','Microsoft YaHei',sans-serif; color: #555555; line-height: 40px; line-height: 46px\9\0; width: 100%; overflow: hidden; text-overflow: ellipsis; }
+
+.product-info .country .name .title_describeapp { height: 48px; text-overflow: ellipsis; overflow: hidden; font-size: 16px; line-height: 48px; color: #999; }
+
+.product-info .price-info { position: relative; border-bottom: 1px solid #dddddd; }
+
+.product-info .price-info .price01 { position: relative; width: 552px; height: 75px; padding-left: 10px; background: url(../img/icons.png) no-repeat 0 -48px; margin-bottom: 20px; margin-right: 20px; }
+
+.product-info .price-info .price01 .box { position: absolute; top: 25px; }
+
+.product-info .price-info .price01 .box span { font: 14px/200% "Hiragino Sans GB", "Microsoft YaHei", sans-serif; color: #999999; width: 68px; margin: 0px; padding-bottom: 10px; }
+
+.product-info .price-info .price01 .box2 { position: relative; width: 56px; height: 26px; margin-top: 25px; background: url(../img/icons.png) no-repeat -64px -8px; }
+
+.product-info .price-info .price01 .box2 .weixin { display: none; position: absolute; top: -150px; right: 25px; z-index: 9999; }
+
+.product-info .price-info .price01 span.price-sp { width: 124px; font: 24px/100% "Hiragino Sans GB","Microsoft YaHei",sans-serif; color: #64a131; font-weight: bold; }
+
+.product-info .price-info h5 { font: 14px/200% 'Hiragino Sans GB','Microsoft YaHei',sans-serif; color: #999999; width: 60px; margin: 0px; }
+
+.product-info .price-info .guige { margin-bottom: 22px; padding-left: 10px; }
+
+.product-info .price-info .guige .zhuang span { display: block; padding-left: 20px; padding-right: 20px; height: 26px; margin-right: 10px; text-align: center; font-family: "Hiragino Sans GB","Microsoft YaHei"; font-size: 12px; line-height: 26px; line-height: 28px\9\0; border: 1px solid #ddd; cursor: pointer; }
+
+.product-info .price-info .guige .zhuang span.current { background-color: #64a131; color: #ffffff; }
+
+.product-info .price-info .send { position: relative; z-index: 10; margin-bottom: 21px; padding-left: 10px; }
+
+.product-info .price-info .send .btn-group { height: 30px; }
+
+.product-info .price-info .send span { color: #afafaf; }
+
+.product-info .price-info .send span.have { color: #64a131; width: 200px; padding-top: 7px; padding-left: 10px; }
+
+.product-info .price-info .number { z-index: 1; position: relative; margin-bottom: 30px; padding-left: 10px; }
+
+.product-info .price-info .number .goods-buy01 { height: 24px; border: 1px solid #dddddd; border-radius: 1px; }
+
+.product-info .price-info .number .goods-buy01 span.num { width: 28px; height: 22px; background-color: #eeeeee; color: #a6a6a6; text-align: center; line-height: 22px; line-height: 26px\9\0; font-size: 14px; cursor: pointer; }
+
+.product-info .price-info .number .goods-buy01 input { font-family: "Hiragino Sans GB","Microsoft YaHei",sans-serif; font-size: 14px; width: 35px; height: 22px; border: 0px; text-align: center; line-height: 24px; padding: 0px; }
+
+.product-info .price-info .buy { margin-bottom: 23px; }
+
+.product-info .price-info .buy .fr-buy { margin-right: 10px; }
+
+.product-info .price-info .buy .fr-buy a { color: #7daf57; background: #f5ffed; border: 1px solid #64a131; }
+
+.product-info .price-info .buy .fr-add a { color: #eff4ec; background: #64a131; }
+
+.product-info .price-info .buy a { display: block; width: 160px; height: 36px; font-family: "Hiragino Sans GB","microsoft yahei",sans-serif; font-size: 16px; text-align: center; line-height: 18px; line-height: 26px\9\0; line-height: 18px\9; border-radius: 4px; text-decoration: none; }
+
+.product-info .comment { margin-top: 26px; }
+
+.product-info .comment > div { width: 50%; margin-bottom: 10px; }
+
+.product-info .comment > div > span { width: 70%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; color: #555; }
+
+.product-info .comment h5 { font-size: 14px; line-height: 20px; margin: 0px; margin-right: 20px; color: #999; }
+
+.content .assess .leftpart { width: 1002px; border: 1px solid #ccc; margin-bottom: 43px; }
+
+.content .assess .rightpart { width: 278px; padding-left: 20px; }
+
+.content .assess .rightpart h5 { color: #64a131; font-family: 'Hiragino Sans GB','Microsoft YaHei',sans-serif; line-height: 39px; border-bottom: 1px solid #ccc; }
+
+.content .assess .rightpart ul li { width: 260px; height: 91px; padding: 13px 0 8px 0; border-bottom: 1px solid #ccc; }
+
+.content .assess .rightpart ul li a { color: #999999; }
+
+.content .assess .rightpart ul li .tu > img { width: 70px; height: 70px; overflow: hidden; }
+
+.content .assess .rightpart ul li .title { padding-left: 10px; }
+
+.content .assess .rightpart ul li h5 { border: none; font-family: 'Hiragino Sans GB','Microsoft YaHei',sans-serif; line-height: 20px; color: #555555; width: 150px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+.content .assess .rightpart ul li p { font-size: 14px; font-family: 'Hiragino Sans GB','Microsoft YaHei',sans-serif; line-height: 20px; color: #999999; }
+
+.content .assess .good-details { width: 1000px; background-color: #f1f1f1; border-left: none; border-right: none; }
+
+.content .assess .good-details span.cur { height: 39px; border-top: 3px solid #64a131; padding: 0 36px; background-color: #ffffff; text-align: center; line-height: 36px; line-height: 40px\9\0; }
+
+.content .assess .good-details span { font: 16px/200% 'Hiragino Sans GB','Microsoft YaHei',sans-serif; color: #555555; height: 39px; padding: 0 38px; text-align: center; line-height: 39px; line-height: 44px\9\0; cursor: pointer; border-right: 1px solid #ccc; margin-top: -1px; }
+
+.content .assess .good-details span b { color: #64a131; }
+
+.content .assess .good-details a { display: block; position: relative; width: 172px; height: 38px; font-family: "Hiragino Sans GB","microsoft yahei",sans-serif; font-size: 16px; text-align: center; line-height: 38px; line-height: 42px\9\0; border-radius: 0px; background: #64a131; text-decoration: none; border-color: #64a131; border: 0px; }
+
+.content .assess .good-details a.btn-lg { padding: 2px 22px; }
+
+.content .assess .good-details a i { display: block; width: 20px; height: 20px; margin-top: 7px; margin-left: 10px; background: url(../img/icons.png) no-repeat -528px -6px; }
+
+.content .assess .good-details a .thefruit { display: none; position: absolute; right: 0px; bottom: -168px; width: 358px; padding: 14px; height: 168px; background-color: #ffffff; border: 1px solid #ccc; border-right: none; }
+
+.content .assess .good-details a .thefruit .fruitleft > img { width: 140px; height: 140px; overflow: hidden; }
+
+.content .assess .good-details a .thefruit .fruitright { width: 175px; padding-left: 14px; }
+
+.content .assess .good-details a .thefruit .fruitright h5 { text-align: left; line-height: 20px; color: #555555; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.content .assess .good-details a .thefruit .fruitright p { text-align: left; font-size: 14px; line-height: 31px; color: #999999; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; }
+
+.content .assess .good-details a .thefruit .fruitright .anniu { width: 90px; height: 30px; background-color: #64a131; border-radius: 4px; cursor: pointer; font-size: 16px; font-family: 'Hiragino Sans GB','Microsoft YaHei',sans-serif; line-height: 30px; margin-top: 20px; }
+
+.content .assess .good-comments { width: 1000px; }
+
+.content .assess .good-comments ul.no1 li { width: 1000px; height: auto; }
+
+.content .assess .good-comments ul.no1 li img { width: 100%; }
+
+.content .assess .good-comments ul.no2 { display: none; }
+
+.content .assess .good-comments ul.no2 .detail-title { width: 1000px; padding-top: 46px; padding-bottom: 50px; }
+
+.content .assess .good-comments ul.no2 .detail-title .detail-title00 { width: 178px; height: 100px; padding: 21px 20px; text-align: center; border-right: 1px solid #ccc; }
+
+.content .assess .good-comments ul.no2 .detail-title .detail-title00 p.p1 { font: 40px/100% 'Hiragino Sans GB W6','Microsoft YaHei'; color: #f6ab00; }
+
+.content .assess .good-comments ul.no2 .detail-title .detail-title00 p.p2 { font: 14px/100% 'Hiragino Sans GB W6','Microsoft YaHei'; }
+
+.content .assess .good-comments ul.no2 .detail-title .detail-title01 { width: 377px; padding: 11px 38px; padding-bottom: 0px; border-right: 1px solid #ccc; }
+
+.content .assess .good-comments ul.no2 .detail-title .detail-title01 .pl-user { font: 14px/100% 'Hiragino Sans GB','Microsoft YaHei',sans-serif; width: 300px; margin-bottom: 16px; }
+
+.content .assess .good-comments ul.no2 .detail-title .detail-title01 .dengji-good { width: 196px; height: 14px; border-radius: 10px; background-color: #dddddd; margin-left: 10px; margin-right: 10px; }
+
+.content .assess .good-comments ul.no2 .detail-title .detail-title01 .dengji-good #grade_good_another { height: 14px; border-radius: 10px; background-color: #f6ab00; }
+
+.content .assess .good-comments ul.no2 .detail-title .detail-title02 { width: 440px; padding-top: 20px; padding-left: 38px; text-align: center; }
+
+.content .assess .good-comments ul.no2 .detail-title .detail-title02 p { font: 14px/200% 'Hiragino Sans GB W6','Microsoft YaHei',sans-serif; }
+
+.app-detail { padding: 0px; margin: 0; }
+
+.dynamic-prop-table { font-family: Calibri,Arial,Helvetica,sans-serif; border: 1px solid #d8d8d8; }
+
+.dynamic-prop-table dl { display: box; display: -webkit-box; display: -ms-box; display: -moz-box; -webkit-box-align: center; -ms-box-align: center; -moz-box-align: center; border-bottom: 1px solid #d8d8d8; margin: 0; font-size: 14px; line-height: 17px; width: 100%; font-weight: lighter; }
+
+.dynamic-prop-table dl:nth-child(odd) { background: #f7f7f7; }
+
+.dynamic-prop-table dl dt { width: 86px; text-align: left; padding: 9px 12px; }
+
+.dynamic-prop-table dl dt dd { -webkit-box-flex: 1; -moz-box-flex: 1; -ms--box-flex: 1; box-flex: 1; margin: 0; border-left: 1px solid #d8d8d8; padding: 9px 12px; }
+
+.dropdown-menu { z-index: 1000; }
+
+.detail-user-title { width: 1000px; height: 38px; padding-left: 28px; font: 14px/100% 'Hiragino Sans GB W6','Microsoft YaHei',sans-serif; color: #555555; line-height: 38px; border: 1px solid #ccc; border-left: none; border-right: none; background-color: #eeeeee; }
+
+.detail-user-title li { padding-right: 30px; cursor: pointer; font-size: 14px; font-family: 'Hiragino Sans GB','Microsoft YaHei',sans-serif; }
+
+.detail-user-title li.now-gray s { display: inline-block; width: 14px; height: 16px; padding-right: 25px; background: url(../img/icons.png) no-repeat -532px -151px; }
+
+.detail-user-title li s { display: inline-block; width: 14px; height: 16px; padding-right: 25px; margin-top: 10px; background: url(../img/icons.png) no-repeat -532px -170px; }

@@ -48,7 +48,8 @@ require(['config'],function(){
                             return `
                                 <li>
                                     <div class="wrap">
-                                        <div class="s-img">
+                                        <div class="s
+                                        -img">
                                             <a href="#"><img class="lazy" src="${item.imgurl}"></a>
                                         </div>
                                         <div class="s-info clearfix">
