@@ -1,9 +1,10 @@
 // 引入gulp模块，得到一个对象/函数
 let gulp = require('gulp');
 let sass = require('gulp-sass');
+browserSync = require('browser-sync');
 
 let path = {
-    sass:'./src/sass/*.scss',
+    sass:'./src/sass/list.scss',
     js:'./src/js/*.js'
 }
 
@@ -28,3 +29,15 @@ gulp.task('jtSass',function(){
     // 监听这个文件，当文件有修改时，执行响应任务
     gulp.watch(path.sass,['compileSass']);
 })
+
+//设置任务--架设静态服务器
+gulp.task('browser-sync',function(){
+    browserSync.init({
+        files:['**'],
+        server:{
+            baseDir:'./',  // 设置服务器的根目录
+            index:'./src/index.html'
+        },
+        prot:8500 //指定访问服务器端口号
+    });
+});

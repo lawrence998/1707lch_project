@@ -1,0 +1,179 @@
+.w-1000{width: 1000px;margin:0 auto;}
+p{
+    margin:0 0 10px;
+    &.member{
+        font-size: 20px;
+    font-family: 'Hiragino Sans GB','Microsoft YaHei',sans-serif;
+    color: #999999;
+    padding-top: 15px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 36px;
+    }
+}
+.login-left {
+    width: 500px;
+    position: relative;
+    margin-bottom: 46px;
+}
+.login-right {
+    width: 500px;
+    padding-left: 60px;
+    .login-form{
+        ul{
+            padding: 0;
+            li{
+                margin-bottom:26px;
+                .all{
+                    width: 96px;
+                    height: 40px;
+                    font-size:16px;
+                    font-family:'Hiragino Sans GB','Microsoft YaHei',sans-serif;
+                    color:#999;
+                    text-align:right;
+                    span{
+                        line-height:40px;
+                    }
+                }
+                .send-yanzm{
+                    position:relative;
+                    padding-left:42px;
+                    .true{
+                        right:-36px;
+                    }
+                }
+                input{
+                    width: 300px;
+                    height: 40px;
+                    outline:none;
+                    border-radius:0;
+                    font-family:arial;
+                    &.hasError {
+                        border-color: #f53030;
+                        color: #f53030;
+                    }
+                }
+                .true{
+                    position:absolute;
+                    top:10px;
+                    right:-36px;
+                    width: 22px;
+                    height: 22px;
+                    background:url(../img/icons.png) no-repeat -12px -360px;
+                    display:none;
+                }
+                .password{
+                    position:relative;
+                    padding-left:42px;
+                }
+                .entrue{
+                    position:relative;
+                    padding-left:42px;
+                }
+                .yanzm {
+                    position: relative;
+                    padding-left: 42px;
+                    input{
+                        width: 272px;
+                    }
+                    .yanzm-num{
+                        position:absolute;
+                        width: 115px;
+                        height: 38px;
+                        top:1px;
+                        right:1px;
+                        font-size:25px;
+                        text-align:center;
+                        line-height:38px;
+                        background: #eee;
+                    }
+                    .update{
+                        position:absolute;
+                        top:10px;
+                        right:-30px;
+                        width: 20px;
+                        height: 20px;
+                        background:url(../img/icons.png) no-repeat -7px -325px;
+                        cursor:pointer;
+                    }
+                    >.true{
+                        right:-65px;
+                    }
+                }
+                .mobile-yanzm {
+                    position: relative;
+                    padding-left: 42px;
+                }
+                .send {
+                    position: absolute;
+                    top: 1px;
+                    right: 1px;
+                    width: 98px;
+                    height: 38px;
+                    font-size: 14px;
+                    font-family: 'Hiragino Sans GB','Microsoft YaHei',sans-serif;
+                    line-height: 38px;
+                    text-align: center;
+                    background-color: #eaeaea;
+                    cursor: pointer;
+                }
+                .iconError {
+                    display: block;
+                    background: url(../img/icon-error.png) no-repeat 0 0;
+                }
+            }
+        }
+    }
+}
+.fruit-login {
+    font-size: 16px;
+    font-family: 'Hiragino Sans GB','Microsoft YaHei',sans-serif;
+    margin-right: 3px;
+}
+.fr-regist {
+    margin-right: 14px;
+    a{
+        display: block;
+        width: 143px;
+        height: 38px;
+        background-color: #64a131;
+        padding: 0px;
+        border-radius: 4px;
+        border: none;
+        line-height: 38px;
+        text-align: center;
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+.fr-login{
+    a{
+        display: block;
+        width: 143px;
+        height: 38px;
+        padding: 0px;
+        border: 1px solid #64a131;
+        line-height: 38px;
+        text-align: center;
+        background-color: #f5ffed;
+        color: #7bae55;
+        text-decoration: none; 
+    }
+    
+}
+.login {
+    position: absolute;
+    bottom: 21px;
+    left: 175px;
+}
+.login-btn {
+    padding: 12px 33px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #64a131!important;
+    color: #64a131!important;
+    background-color: #fff!important;
+    box-shadow: none!important;
+    border-color: #64a131!important;
+    text-align: center;
+}

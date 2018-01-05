@@ -1,0 +1,59 @@
+/*
+    导入的样式
+ */
+
+@import 'register';
+
+/* 导入结束 */
+.login-right .login-form {
+    margin-top: 75px;
+    ul{
+        li{
+            &.yan-z{
+                margin-bottom:6px;
+            }
+            &.log-wj{
+                margin-bottom:6px;
+            }
+            .wj-mima {
+                font-size: 16px;
+                font-family: 'Hiragino Sans GB','Microsoft YaHei',sans-serif;
+                color: #999;
+                width: 300px;
+                .fr-ch {
+                    .checkbox{
+                        position: relative;
+                        label {
+                            min-height: 20px;
+                            padding-left: 20px;
+                            margin-bottom: 0;
+                            font-weight: normal;
+                            cursor: pointer;
+                        }
+                        span {
+                            position: absolute;
+                            top: 0;
+                            width: 65px;
+                            left: 20px;
+                        }
+                    }
+                    input {
+                        width: 18px;
+                        height: 18px;
+                        position: absolute;
+                        top: -2px;
+                    }
+                    
+                }
+                .fr-wj {
+                    line-height: 43px;
+                    a {
+                        color: #999999;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+}

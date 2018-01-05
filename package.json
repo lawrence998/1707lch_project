@@ -1,0 +1,38 @@
+{
+  "name": "1229.project",
+  "version": "1.0.0",
+  "description": "git学习与模块化开发",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "browser-sync": "^2.23.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-less": "^3.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lawrence998/1707lch_project.git"
+  },
+  "keywords": [
+    "git",
+    "模块化开发"
+  ],
+  "author": "lichihang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lawrence998/1707lch_project/issues"
+  },
+  "homepage": "https://github.com/lawrence998/1707lch_project#readme"
+}

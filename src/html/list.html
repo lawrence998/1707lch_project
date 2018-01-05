@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>天天果园产品列表</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/list.css" />
+</head>
+<body>
+    <div class="box">
+        <!-- 头部开始 -->
+        <section class="header">
+            <div class="topnav">
+                <div class="content clearfix">
+                    <span class="fl">
+                        <span class="fl">
+                            <i class="glyphicon glyphicon-plane" aria-hidden="true"></i>
+                             广州 
+                            <i class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></i>
+                        </span>
+                        满百包邮（环郊内）
+                        <a href="" class="link-1">星夜达</a>
+                    </span>
+                    <ul class="list-inline fr">
+                        <li>
+                            <a href="html/login.html" class="login">[ 登录 ]</a> , 
+                            <a href="html/register.html" class="register">[ 注册有惊喜 ]</a>
+                        </li>
+                        <li>|</li>
+                        <li class="notice1">
+                            果园公告
+                            <div class="noticelist hide">
+                                <ul class="">
+                                    <li><a href="#">全仓充值活动调整公告</a></li>
+                                    <li><a href="#">全仓充值活动调整公告</a></li>
+                                    <li><a href="#">全仓充值活动调整公告</a></li>
+                                </ul>
+                                <a href="#">查看更多 ></a>
+                            </div>
+                        </li>
+                        <li>|</li>
+                        <li><a href="#">券卡兑换</a></li>
+                        <li>|</li>
+                        <li class="notice2">
+                            <i class="glyphicon glyphicon-phone" aria-hidden="true"></i>
+                            手机果园
+                            <div class="topcode hide">
+                                <div class="text-center">
+                                    <span class="VI-color2">下载果园app，</span>
+                                        即享果园特价商品
+                                </div>
+                                <dl class="clearfix">
+                                    <dt>
+                                        <img src="../img/erweima1.jpg" alt="" />
+                                    </dt>
+                                    <dd>
+                                        <a href="#" target="_blank">
+                                            <img src="../img/appstore.jpg" alt="" />
+                                        </a>
+                                        <a href="#" target="_blank">
+                                            <img src="../img/android.jpg" alt="" />
+                                        </a>
+                                    </dd>
+                                </dl>
+                                <dl class="clearfix">
+                                    <dt>
+                                        <img src="http://img1.fruitday.com/guan_ewcode1.jpg" alt="" />
+                                    </dt>
+                                    <dd>
+                                        <span class="VI-color2">关注果园微信</span>
+                                        优惠信息实时掌握
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>|</li>
+                        <li>
+                            <i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>
+                            <b>400-720-0770</b>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a href="#" class="navbar-brand logo"></a>
+                        </div>
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav" id="navcon">
+                                <li class="current">
+                                    <a href="/">
+                                        首页
+                                        <span>Home</span>
+                                    </a> <em></em>
+                                </li>
+                                <li class="">
+                                    <a href="/prolist/index/40" target="_blank">
+                                        鲜果
+                                        <span>Fruit</span>
+                                    </a> <em></em>
+                                </li>
+                                <li class="">
+                                    <a href="/prolist/index/277" target="_blank">
+                                        生鲜
+                                        <span>Fresh</span>
+                                    </a>
+                                    <em></em>
+                                </li>
+                                <li class="">
+                                    <a href="/prolist/index/43" target="_blank">
+                                        礼品
+                                        <span>Gift</span>
+                                    </a>
+                                    <em></em>
+                                </li>
+                                <li class="">
+                                    <a href="/member/center" target="_blank">
+                                        会员中心
+                                        <span>VIP Club</span>
+                                    </a>
+                                    <em></em>
+                                </li>
+                            </ul>
+                            <div class="navbar-right">
+                            <div class="topsearch">
+                                <input id="search-keyword" type="search" placeholder="请输入关键字" value="奇异果"/>
+                                <input type="hidden" id="last_keyword" />
+                                <button id="search-button">
+                                    <i class="glyphicon glyphicon-search" aria-hidden="true"></i>
+                                </button>
+                                <div class="hotsearch">
+                                    热门：
+                                    <a href="#" target="_blank">橙</a>
+                                    <a href="#" target="_blank">提子</a>
+                                    <a href="#" target="_blank">樱桃</a>
+                                    <a href="#" target="_blank">苹果</a>
+                                </div>
+                                <ul class="subsearch hide">
+                                    <li>奇异果</li>
+                                    <li>奇异果</li>
+                                    <li>奇异果</li>
+                                    <li>奇异果</li>
+                                    <li>奇异果</li>
+                                    <li>奇异果</li>
+                                    <li>奇异果</li>
+                                    <li>奇异果</li>
+                                </ul>
+                            </div>
+                            <div class="miniCart">
+                                <div id="miniCart">
+                                    <i class="glyphicon glyphicon-heart cartbg" aria-hidden="true"></i>
+                                    <i class="glyphicon glyphicon-shopping-cart cart" aria-hidden="true"></i>
+                                    <span class="cartnum">0</span>
+                                </div>
+                                <div class="cart-order cartcont">
+                                    <i class="glyphicon glyphicon-triangle-top"></i>
+                                    <ul class="list-unstyled">
+                                        
+                                    </ul>
+                                    <div class="mcart-pay clearfix">
+                                        <div class="pull-left">
+                                            共
+                                            <span class="VI-color2">0</span>
+                                            件商品
+                                        </div>
+                                        <div class="pull-right">
+                                            商品小计
+                                            <span class="fs-3 VI-color2">0.00</span>
+                                        </div>
+                                        <button id="btncart" type="button" class="btn btn-success btn-lg btn-block">立即结算</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <!-- 商品列表 -->
+        <div class="content typepage">
+            <!-- 筛选器 -->
+            <div class="select clearfix">
+                <div class="oc clearfix pull-left f-li ">
+                    <h5 class="pull-left">品类</h5>
+                    <div class="f-select pull-left clearfix">
+                        <div class="pull-left leftpart">
+                            <a href="/prolist/index/40/0-0-0-0-0-0-0" class="active">
+                                <span class="f-all line">全部</span>
+                            </a>
+                        </div>
+                        <div class="pull-left rightpart">
+                            <a href="/prolist/index/40/573-0-0-0-0-0-0" class="">
+                                <span class="line">水果礼篮</span>
+                            </a>
+                            <a href="/prolist/index/40/574-0-0-0-0-0-0" class="">
+                                <span class="line">充值券卡</span>
+                            </a>
+                            <a href="/prolist/index/40/539-0-0-0-0-0-0" class="">
+                                <span class="line">组合套餐</span>
+                            </a>
+                            <a href="/prolist/index/40/572-0-0-0-0-0-0" class="">
+                                <span class="line">水果礼盒</span>
+                            </a>
+                            <a href="/prolist/index/40/145-0-0-0-0-0-0" class="">
+                                <span class="line">芒果</span>
+                            </a>
+                            <a href="/prolist/index/40/142-0-0-0-0-0-0" class="">
+                                <span class="line">凤梨</span>
+                            </a>
+                            <a href="/prolist/index/40/152-0-0-0-0-0-0" class="">
+                                <span class="line">瓜类</span>
+                            </a>
+                            <a href="/prolist/index/40/139-0-0-0-0-0-0" class="">
+                                <span class="line">梨</span>
+                            </a>
+                            <a href="/prolist/index/40/541-0-0-0-0-0-0" class="">
+                                <span class="line">桔柑类</span>
+                            </a>
+                            <a href="/prolist/index/40/355-0-0-0-0-0-0" class="">
+                                <span class="line">番茄</span>
+                            </a>
+                            <a href="/prolist/index/40/135-0-0-0-0-0-0" class="">
+                                <span class="line">橙子</span>
+                            </a>
+                            <a href="/prolist/index/40/137-0-0-0-0-0-0" class="">
+                                <span class="line">火龙果</span>
+                            </a>
+                            <a href="/prolist/index/40/371-0-0-0-0-0-0" class="">
+                                <span class="line">椰子</span>
+                            </a>
+                            <a href="/prolist/index/40/755-0-0-0-0-0-0" class="">
+                                <span class="line">果园周边</span>
+                            </a>
+                            <a href="/prolist/index/40/140-0-0-0-0-0-0" class="">
+                                <span class="line">柠檬</span>
+                            </a>
+                            <a href="/prolist/index/40/304-0-0-0-0-0-0" class="">
+                                <span class="line">百香果</span>
+                            </a>
+                            <a href="/prolist/index/40/141-0-0-0-0-0-0" class="">
+                                <span class="line">奇异果</span>
+                            </a>
+                            <a href="/prolist/index/40/143-0-0-0-0-0-0" class="">
+                                <span class="line">香蕉</span>
+                            </a>
+                            <a href="/prolist/index/40/351-0-0-0-0-0-0" class="">
+                                <span class="line">龙眼</span>
+                            </a>
+                            <a href="/prolist/index/40/131-0-0-0-0-0-0" class="">
+                                <span class="line">葡萄提子</span>
+                            </a>
+                            <a href="/prolist/index/40/144-0-0-0-0-0-0" class="">
+                                <span class="line">牛油果</span>
+                            </a>
+                            <a href="/prolist/index/40/246-0-0-0-0-0-0" class="">
+                                <span class="line">枣</span>
+                            </a>
+                            <a href="/prolist/index/40/134-0-0-0-0-0-0" class="">
+                                <span class="line">榴莲</span>
+                            </a>
+                            <a href="/prolist/index/40/555-0-0-0-0-0-0" class="">
+                                <span class="line">苹果</span>
+                            </a>
+                            <a href="/prolist/index/40/256-0-0-0-0-0-0" class="">
+                                <span class="line">蓝莓</span>
+                            </a>
+                            <a href="/prolist/index/40/146-0-0-0-0-0-0" class="">
+                                <span class="line">莲雾</span>
+                            </a>
+                            <a href="/prolist/index/40/307-0-0-0-0-0-0" class="">
+                                <span class="line">草莓</span>
+                            </a>
+                            <a href="/prolist/index/40/296-0-0-0-0-0-0" class="">
+                                <span class="line">柚子</span>
+                            </a>
+                            <a href="/prolist/index/40/252-0-0-0-0-0-0" class="">
+                                <span class="line">樱桃</span>
+                            </a>
+                            <a href="/prolist/index/40/210-0-0-0-0-0-0" class="">
+                                <span class="line">释迦</span>
+                            </a>
+                            <a href="/prolist/index/40/254-0-0-0-0-0-0" class="">
+                                <span class="line">葡萄柚</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="oc clearfix pull-left f-li ">
+                    <h5 class="pull-left">产地</h5>
+                    <div class="f-select pull-left clearfix">
+                        <div class="pull-left leftpart">
+                            <a href="/prolist/index/40/0-0-0-0-0-0-0" class="active">
+                                <span class="f-all line">全部</span>
+                            </a>
+                        </div>
+                        <div class="pull-left rightpart">
+                            <a href="/prolist/index/40/0-0-50-0-0-0-0" class="">
+                                <span class="line">中国</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-51-0-0-0-0" class="">
+                                <span class="line">美国</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-52-0-0-0-0" class="">
+                                <span class="line">智利</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-53-0-0-0-0" class="">
+                                <span class="line">泰国</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-55-0-0-0-0" class="">
+                                <span class="line">新西兰</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-56-0-0-0-0" class="">
+                                <span class="line">意大利</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-58-0-0-0-0" class="">
+                                <span class="line">墨西哥</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-59-0-0-0-0" class="">
+                                <span class="line">越南</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-61-0-0-0-0" class="">
+                                <span class="line">马来西亚</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-62-0-0-0-0" class="">
+                                <span class="line">秘鲁</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-66-0-0-0-0" class="">
+                                <span class="line">荷兰</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-70-0-0-0-0" class="">
+                                <span class="line">法国</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-71-0-0-0-0" class="">
+                                <span class="line">韩国</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-76-0-0-0-0" class="">
+                                <span class="line">以色列</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-78-0-0-0-0" class="">
+                                <span class="line">厄瓜多尔</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-999-0-0-0-0" class="">
+                                <span class="line">其它</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="oc clearfix pull-left f-li ">
+                    <h5 class="pull-left">规格</h5>
+                    <div class="f-select pull-left clearfix">
+                        <div class="pull-left leftpart">
+                            <a href="/prolist/index/40/0-0-0-0-0-0-0" class="active">
+                                <span class="f-all line">全部</span>
+                            </a>
+                        </div>
+                        <div class="pull-left rightpart">
+                            <a href="/prolist/index/40/0-0-0-0-1-0-0" class="">
+                                <span class="line">单品</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-0-0-2-0-0" class="">
+                                <span class="line">套餐</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-0-0-3-0-0" class="">
+                                <span class="line">礼盒</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-0-0-4-0-0" class="">
+                                <span class="line">礼篮</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-0-0-5-0-0" class="">
+                                <span class="line">券卡</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="oc clearfix pull-left f-li f-pai">
+                    <h5 class="pull-left">排序</h5>
+                    <div class="f-select pull-left clearfix">
+                        <div class="pull-left leftpart">
+                            <a href="/prolist/index/40/0-0-0-0-0-0-0" class="active">
+                                <span class="f-all line">默认</span>
+                            </a>
+                        </div>
+                        <div class="pull-left rightpart">
+                            <a href="/prolist/index/40/0-0-0-0-0-0-2" class="">
+                                <span class="line">价格从低到高</span>
+                            </a>
+                            <a href="/prolist/index/40/0-0-0-0-0-0-3" class="">
+                                <span class="line">价格从高到低</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 列表 -->
+            <div class="f-list clearfix">
+                <div class="leftpart pull-left">
+                    
+                </div>
+                <!-- 浏览过的商品 -->
+                <div class="rightpart pull-right">
+                    <h5>最近浏览过</h5>
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+            <!-- ajax请求数据 -->
+            <script src="../js/require.js" data-main="../js/list"></script>
+        </div>
+        <!--底部 -->
+        <section class="toolbarfoot">
+            <a href="#" class="kq"></a>
+            <a href="#" class="kf"></a>
+            <a href="#" class="return-top"></a>
+        </section>
+        <section class="footer">
+            <div class="content">
+                <ul class="list-inline clearfix">
+                    <li class="p-icon"></li>
+                    <li class="p-icon"></li>
+                    <li class="p-icon"></li>
+                    <li class="p-icon"></li>
+                </ul>
+                <div class="footbar clearfix">
+                    <div class="block4">
+                        <div class="logo"></div>
+                        <div class="tel">
+                            <img src="../img/guan_tel.png" alt="" />
+                        </div>
+                        <div class="font-gray fs-4">
+                            <span class="font-color">电话客服</span>
+                            9:00 - 21:00
+                            <br />
+                            <span class="font-color">在线客服</span>
+                            8:00 - 24:00
+                        </div>
+                    </div>
+                    <ul class="block2">
+                        <li><img src="../img/erweima1.jpg" alt="" /><span>天天果园官方微信</span></li>
+                        <li><img src="../img/erweima2.jpg" alt="" /><span>天天果园APP</span></li>
+                    </ul>
+                    <ul class="block3 list-unstyled">
+                        <li><h4>购物指南</h4><a href="/help/index/725">新用户注册</a><a href="/help/index/726">在线下单</a><a href="/help/index/727">支付方式</a></li>
+                        <li><h4>配送说明</h4><a href="/help/index/728">运费说明</a><a href="/help/index/729">运费方式</a><a href="/help/index/730">发票说明</a></li>
+                        <li><h4>售后服务</h4><a href="/help/index/731">退换货规则</a><a href="/help/index/732">服务保障承诺</a><a href="/help/index/733">验货与签收</a></li>
+                        <li><h4>企业服务</h4><a href="/help/index/734">企业订购</a><a href="/help/index/735">公司简介</a><a href="/help/index/736">定制专区</a></li>
+                    </ul>
+                </div>
+                <div class="copyright text-center">
+                    <p class="fs-2 font-color">
+                        版权所有 &copy;2018上海天天鲜果电子商务有限公司&nbsp;&nbsp;保留所有权利 | <a href="#" style="color:#999;" target="_blank">沪ICP备12042163</a>
+                    </p>
+                    <p class="fs-2 VI-color2">天天果园&nbsp;&nbsp;鲜果网购</p>
+                    <div>
+                        <a href="#"><img src="../img/guan_shgs.gif" alt="" /></a>
+                        <a href="#"><img src="../img/guan_wgdjp.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>  
+        </section>
+    </div>
+</body>
+</html>
