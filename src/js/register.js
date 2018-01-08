@@ -151,7 +151,7 @@ require(['config'],function(){
             var $sendnum = $('.send-num');
             var $timeout = $('#timeout');
             var $tel = $('#telverify');
-            console.log($mobile.children().first(),$mobile.children(1))
+            //console.log($mobile.children().first(),$mobile.children(1))
             $sendnum.click(function(){
                 
                 $_user = $user.val();
@@ -211,10 +211,33 @@ require(['config'],function(){
                 }else if($show4.hasClass('iconError') || $_verify === ''){
                     alert('请输入正确验证码');
                     return false;
-                }else{
-                    alert('恭喜您，成功注册账号。赶紧去登录吧');
+                }else{console.log($_user,$_pw)
+                    $.ajax({
+                        url:'../api/register.php',
+                        data:{
+                            username:$_user,
+                            password:$_pw
+                        },
+                        success:function(data){
+                            if(data === 'fail'){
+                                alert('用户名已存在');
+                                return false;
+                            }
+
+                            if(data === 'ok'){
+                                alert('恭喜您，成功注册账号。赶紧去登录吧');
+                            }
+                            
+                            
+                        }
+                    })
+                    
                 }
+
+
             })
+
+
         })
     })
 })

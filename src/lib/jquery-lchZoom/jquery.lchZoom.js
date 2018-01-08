@@ -3,14 +3,14 @@
         //默认值
         var defaults = {
             //宽高
-            width:400,
-            height:300,
+            width:560,
+            height:530,
 
             //大图显示位置
             position:'right',//bottom,top,left,
 
             //小图与大图的间距
-            gap:15
+            gap:10
         }
 
         //这里的this指向实例
@@ -19,7 +19,7 @@
             var opt = $.extend({},defaults,options);
 
             var $small = $(this);
-            var $smallImg = $small.children('img');
+            var $smallImg = $small.children().first();console.log($smallImg)
 
             //添加特性类
             $small.addClass('lch-zoom');
@@ -29,7 +29,7 @@
 
             //定位大图容器
             var left,top;
-            if(opt.position == 'right'){
+            if(opt.position == 'right'){console.log($small.offset().left,$smallImg.outerWidth(),$small.offset().top)
                 left = $small.offset().left + $smallImg.outerWidth() + opt.gap;
                 top = $small.offset().top;
             }else if(opt.position == 'left'){
@@ -55,12 +55,13 @@
             $bigImg.appendTo($big);
 
             // 把大图容器写入页面
-            $big.appendTo('body');
+            $big.appendTo($small);
 
 
             //生成放大镜
             var $zoom = $('<span/>').addClass('minzoom');
             
+
             $zoom.appendTo($small);
 
             //创建图片，为了加载
@@ -87,8 +88,10 @@
                 //设置放大镜尺寸
                 //跟放大区域成比例
                 $zoom.css({
-                    width:opt.width/ratio,
-                    height:opt.height/ratio
+                    // width:opt.width/ratio,
+                    // height:opt.height/ratio
+                    width:50,
+                    height:50
                 });
             }).on('mouseleave',function(){
                 $big.fadeOut();

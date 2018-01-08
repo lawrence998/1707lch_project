@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>天天果园注册页面</title>
+    <title>天天果园购物车</title>
     <link rel="stylesheet" type="text/css" href="../css/common.css" />
     <link rel="stylesheet" type="text/css" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="../css/register.css" />
+    <link rel="stylesheet" type="text/css" href="../css/car.css" />
 </head>
 <body>
     <div class="box">
@@ -88,93 +88,125 @@
                         <div class="navbar-header">
                             <a href="#" class="navbar-brand logo"></a>
                         </div>
-                        <div class="collapse navbar-collapse"></div>
+                        <div class="collapse navbar-collapse">
+                            <ul class="icons-cart clearfix pull-right">
+                                <li class="pull-left li1 cur">
+                                    <span>1</span>
+                                    <p>我的购物车</p>
+                                </li>
+                                <li class="pull-left li2">
+                                    <span>2</span>
+                                    <p>确认订单信息</p>
+                                </li>
+                                <li class="pull-left li3">
+                                    <span>3</span>
+                                    <p>成功提交订单</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </nav>
             </div>
         </section>
-        <!-- 注册 -->
-        <div class="w-1000 pt-50">
-            <p class="member">注册会员</p>
-            <div class="login-sec clearfix">
-                <div class="login-left fl">
-                    <img src="../img/huiyuan.jpg" alt="" />
-                    <div class="login">
-                        <a href="./login.html" class="btn btn-primary btn-lg active login-btn" title="点击此按钮，登录会员账号">会员登录></a>
+        <!-- 中部开始 -->
+        <div class="cart ">
+            <div class="cart-filter-bar pt-50">
+                <div class="mycart">
+                    <p class="pull-left">我的购物车</p>
+                    <a href="/prolist/index/40" class="pull-right">继续逛逛></a>
+                </div>
+            </div>
+            <div class="cartmain cartspage">
+                <div class="cart-head clearfix">
+                    <div class="cart-select pull-left">
+                        <!--<p class="select selected"></p><input type="hidden" value="" />
+                        <span>全选</span>-->
+                    </div>
+                    <input type="hidden">
+                    <div class="cart-good pull-left">
+                        <span>商品</span>
+                    </div>
+                    <div class="cart-spec pull-left">
+                        <span>规格</span>
+                    </div>
+                    <div class="cart-price pull-left">
+                        <span>单价(元)</span>
+                    </div>
+                    <div class="cart-number pull-left">
+                        <span>数量</span>
+                    </div>
+                    <div class="cart-sum pull-left">
+                        <span>原价(元)</span>
+                    </div>
+                    <div class="cart-action pull-left">
+                        <span>操作</span>
                     </div>
                 </div>
-                <div class="login-right fr">
-                    <div class="login-form">
-                        <ul>
-                            <li class="clearfix">
-                                <div class="text02 all pull-left">
-                                  <span class="mobile">手机号</span>
-                                </div>
-                                <div class="send-yanzm pull-left">
-                                  <input type="text" class="form-control" id="user">
-                                  <span class="true"></span>
-                                </div> 
-                            </li>
+                <div class="cart-order clearfix ">
+                    <!-- <ul class="list-unstyled">
+                        
+                    </ul> -->
+                    <div class="cart-empty">
+                        购物车中还没有商品，
+                        <a href="../html/list.html">继续逛逛吧！</a>
+                    </div>
 
-                            <li class="clearfix">
-                                <div class="text04 all pull-left">
-                                 <span class="code">密码</span>
-                                </div>
-                                <div class="password pull-left">
-                                  <input type="password" placeholder="请输入6-20位号码字符"class="form-control" id="passwd" >
-                                  <span class="true"></span>
-                                </div>
-                            </li>
-              
-                            <li class="clearfix">
-                                <div class="text05 all pull-left">
-                                <span class="code">确认密码</span>
-                                </div>
-                                <div class="entrue pull-left">
-                                   <input type="password" placeholder="请输入6-20位号码字符" class="pull-left form-control" id="Apasswd">
-                                   <span class="true"></span>
-                                </div>
-                            </li>
-
-                            <li class="clearfix">
-                                <div class="text01 all pull-left">
-                                    <span class="form1">验证码</span>
-                                </div>
-                                <div class="yanzm pull-left">
-                                    <input type="text text-01 " class="pull-left form-control" id="verify"><span class="true"></span>
-                                    <span class="yanzm-num"></span>
-                                    <span class="update auth-img"></span>
-                                </div>
-                            </li>
-
-                            <li class="clearfix">
-                                <div class="text03 all pull-left">
-                                 <span class="text">手机验证码</span>
-                                </div>
-                                <div class="mobile-yanzm pull-left">
-                                  <input type="text" class="form-control" disabled id="telverify"/><span class="true"></span>
-                                  <div class="send" id="TestGetCode"><span class="send-num">发送验证码</span><span class="hide">还剩<b id="timeout">60</b>秒</span></div>
-
-                                </div>
-                            </li>
-
-                            <li class="clearfix">
-                                <div class="fruit-login pull-right">
-                                    <div class="fr-regist pull-left">
-                                       <a href="#" class="btn-lg btn-lg1" role="button" id="submit">注册</a>
-                                    </div>
-                                    <div class="fr-login pull-left">
-                                        <a href="./login.html" class="btn-lg" role="button">会员登录</a>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                </div>
+                <div class="cartfooter">
+                    <div class="cart-pay pull-right">
+                            <span>
+                                已选择
+                                <em>1件</em>
+                                商品  |  订单金额
+                            </span>
+                            <span class="all-order"></span>
+                            <a id="btngopay" class="go-pay">去结算</a>
+                    </div>
+                    <div class="cl"></div>
+                </div>
+            </div>
+            <div class="look-history">
+                <div class="scrollbar clearfix">
+                    <ul class="clearfix look-history-menu">
+                        <li class="looked pull-left"><p>你最近浏览过的商品</p></li>
+                        <li class="pull-left"><p class="p-noborder">你可能感兴趣的商品</p></li>
+                    </ul>
+                </div>
+                <div class="look-history-con">
+                    <div class="wrap">
+                        <div class="frame cartSlidee_0">
+                            <ul class="slidee clearfix ul1">
+                                <!-- <li>
+                                    <a href="/prodetail/index/28636" target="_blank">
+                                        <img src="https://imgqn4.fruitday.com/images/product_pic/4487/1/1-270x270-4487-WXPD1X3H.jpg"/>
+                                        <p class="history-name">小巨弹金桔</p>
+                                        <p class="history-price">￥49.80 / 1kg</p>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </div>
+                        <div class="prev ">
+                            <div></div>
+                        </div>
+                        <div class="next">
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="wrap" style="display:none;">
+                        <div class="frame cartSlidee_1">
+                            <ul class="slidee clearfix ul1">
+                            </ul>
+                        </div>
+                        <div class="prev">
+                            <div></div>
+                        </div>
+                        <div class="next">
+                            <div></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- 表单验证 -->
-        <script src="../js/require.js" data-main="../js/register"></script>
         <!-- 底部 -->
         <section class="toolbarfoot">
             <a href="#" class="kq"></a>
@@ -226,6 +258,7 @@
                 </div>
             </div>  
         </section>
+        <script src="../js/require.js" data-main="../js/car"></script>
     </div>
 </body>
 </html>

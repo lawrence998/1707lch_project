@@ -11,7 +11,7 @@ require.config({
     },
     shim:{
         //设置依赖
-        carousel:['jquery']
-        // zoom:['jquery']
+        carousel:['jquery'],
+        zoom:['jquery']
     }
 });

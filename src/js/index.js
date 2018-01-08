@@ -1,6 +1,6 @@
 //首页
 require(['config'],function(){
-    require(['jquery','carousel','ajax'],function($){
+    require(['jquery','carousel'],function($){
         jQuery(function($){
             $('.frame').lchCarousel({
                 imgs:['img/banner1.png','img/banner2.png'],
@@ -43,54 +43,63 @@ require(['config'],function(){
         });
 
         var goods = document.querySelector('.good-list');
-        ajax({
-            type:'get',
-            url:'http:./api/goodslist.json',
-            success:function(res){      console.log(type(res));
+        $.ajax({
+            url:'http:./api/index.php',
+            data:{
+                category:"'lihe'"
+            },
+            success:function(data){  
+                data = JSON.parse(data);
                 var ul = document.createElement('ul');
                 ul.className = "clearfix";
-                ul.innerHTML = res.map(function(item){
-                    if(item['id'] == "g01"){
-                        return `
-                            <li class="pro_list">
-                                <div class="s-img">
-                                    <a><img src="${item.imgurl}"></a>
+                ul.innerHTML = data.map(function(item){
+                    var imgurl = item.imgurl.split(',')[0];
+                    return `
+                        <li class="pro_list" guid="${item.id}">
+                            <div class="s-img">
+                                <a><img src="${imgurl}"></a>
+                            </div>
+                            <div class="s-info">
+                                <div class="s-name">
+                                    ${item.title}
                                 </div>
-                                <div class="s-info">
-                                    <div class="s-name">
-                                        ${item.title}
-                                    </div>
-                                    <div class="s-unit">
-                                        ￥${item.price}/礼盒
-                                    </div>
-                                    <div class="s-che">
-                                        
-                                    </div>
+                                <div class="s-unit">
+                                    ￥${item.price}/礼盒
                                 </div>
-                                <div class="pro_list_pos">
-                                    <span class="pro_list_span">新品</span>
+                                <div class="s-che">
+                                    
                                 </div>
-                            </li>
-                        `
-                    }
+                            </div>
+                            <div class="pro_list_pos">
+                                <span class="pro_list_span">新品</span>
+                            </div>
+                        </li>
+                    `
+                    
                 }).join('');
                 goods.appendChild(ul);
+
+                
             }
         });
 
         var goods1 = document.querySelector('.g1');
-        ajax({
-            type:'get',
-            url:'http:./api/goodslist.json',
-            success:function(res){
+        $.ajax({
+            url:'http:./api/index.php',
+            data:{
+                category:"'jiating'"
+            },
+            success:function(data){
+                data = JSON.parse(data);
                 var ul = document.createElement('ul');
                 ul.className = "clearfix";
-                ul.innerHTML = res.map(function(item){
-                    if(item['id'] == "g02"){
+                ul.innerHTML = data.map(function(item){
+                    var imgurl = item.imgurl.split(',')[0];
+                    console.log(imgurl);
                         return `
-                            <li class="pro_list">
+                            <li class="pro_list" guid="${item.id}">
                                 <div class="s-img">
-                                    <a><img src="${item.imgurl}"></a>
+                                    <a><img src="${imgurl}"></a>
                                 </div>
                                 <div class="s-info">
                                     <div class="s-name">
@@ -105,25 +114,26 @@ require(['config'],function(){
                                 </div>
                             </li>
                         `
-                    }
+                    
                 }).join('');
                 goods1.appendChild(ul);
             }
         });
 
         var goods2 = document.querySelector('.g2');
-        ajax({
-            type:'get',
-            url:'http:./api/goodslist.json',
-            success:function(res){
+        $.ajax({
+            url:'http:./api/index.php',
+            data:{category:"'quanqiu'"},
+            success:function(data){
+                data = JSON.parse(data);
                 var ul = document.createElement('ul');
                 ul.className = "clearfix";
-                ul.innerHTML = res.map(function(item){
-                    if(item['id'] == "g03"){
+                ul.innerHTML = data.map(function(item){
+                    var imgurl = item.imgurl.split(',')[0];
                         return `
-                            <li class="pro_list">
+                            <li class="pro_list" guid="${item.id}">
                                 <div class="s-img">
-                                    <a><img src="${item.imgurl}"></a>
+                                    <a><img src="${imgurl}"></a>
                                 </div>
                                 <div class="s-info">
                                     <div class="s-name">
@@ -138,25 +148,26 @@ require(['config'],function(){
                                 </div>
                             </li>
                         `
-                    }
+                    
                 }).join('');
                 goods2.appendChild(ul);
             }
         });
 
         var goods3 = document.querySelector('.g3');
-        ajax({
-            type:'get',
-            url:'http:./api/goodslist.json',
-            success:function(res){
+        $.ajax({
+            url:'http:./api/index.php',
+            data:{category:"'shengxian'"},
+            success:function(data){
+                data = JSON.parse(data);
                 var ul = document.createElement('ul');
                 ul.className = "clearfix";
-                ul.innerHTML = res.map(function(item){
-                    if(item['id'] == "g04"){
+                ul.innerHTML = data.map(function(item){
+                    var imgurl = item.imgurl.split(',')[0];
                         return `
-                            <li class="pro_list">
+                            <li class="pro_list" guid="${item.id}">
                                 <div class="s-img">
-                                    <a><img src="${item.imgurl}"></a>
+                                    <a><img src="${imgurl}"></a>
                                 </div>
                                 <div class="s-info">
                                     <div class="s-name">
@@ -171,7 +182,7 @@ require(['config'],function(){
                                 </div>
                             </li>
                         `
-                    }
+                    
                 }).join('');
                 goods3.appendChild(ul);
             }

@@ -84,7 +84,7 @@ require(['config'],function(){
                 }
             });
 
-            //注册按钮
+            //登录按钮
             var $btn = $('.fr-regist .btn');
             $btn.click(function(){
                 $_user = $user.val();
@@ -97,7 +97,23 @@ require(['config'],function(){
                     alert('请输入正确密码格式');
                     return false;
                 }else{
-                    alert('恭喜您，登录成功');
+                    $.ajax({
+                        url:'../api/login.php',
+                        data:{
+                            username:$_user,
+                            password:$_pw
+                        },
+                        success:function(data){console.log(data)
+                            if(data === 'fail'){
+                                alert('手机号不存在或密码错误');
+                                return false;
+                            }
+                            if(data === 'ok'){
+                                alert('恭喜您，登录成功');
+                            }
+                        }
+                    })
+                    
 
                     //记住密码
                     if($checkbox.prop('checked')){

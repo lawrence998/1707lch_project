@@ -69,6 +69,29 @@
     .leftpart {
         width: 1000px;
         margin-bottom: 92px;
+        position:relative;
+        .page{
+            position:absolute;
+            top:100%;
+            left:35%;
+            cursor:pointer;
+            span{
+                display:inline-block;
+                margin:15px;
+                width:50px;
+                height: 50px;
+                border-radius:50%;
+                line-height:50px;
+                text-align: center;
+                background-color:#dfdfdf;
+                color:#666;
+
+                &.active{
+                    background-color:#fc0;
+                    color:#fff;
+                }
+            }
+        }
         ul{
             margin:0 -4px;
             li{
@@ -91,6 +114,7 @@
                     height: 244px;
                     margin-bottom: 6px;
                     position: relative;
+                    
                     img {
                         width: 100%;
                         height: 100%;

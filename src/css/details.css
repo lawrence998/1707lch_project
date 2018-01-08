@@ -18,6 +18,28 @@ ul { margin: 0px; padding: 0px; }
 
 .bread a { color: #64a131; text-decoration: none; }
 
+.header > .content .miniCart > .cartcont > ul li { position: relative; height: 86px; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px dashed #eee; }
+
+.header > .content .miniCart > .cartcont > ul li a { display: block; position: relative; width: 100%; height: 100%; color: #999; text-decoration: none; }
+
+.header > .content .miniCart > .cartcont > ul li a img { display: block; width: 70px; height: 70px; box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
+
+.header > .content .miniCart > .cartcont > ul li a .p-minicart-info { width: 100%; height: 100%; padding-left: 85px; }
+
+.header > .content .miniCart > .cartcont > ul li a .p-minicart-info > h5 { margin: 0 0 6px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+.header > .content .miniCart > .cartcont > ul li .p-mincart-modify { position: absolute; bottom: 15px; left: 85px; width: 66px; height: 22px; text-align: center; }
+
+.header > .content .miniCart > .cartcont > ul li .p-mincart-modify .p-mincart-act { background: #f1f1f1; float: left; width: 22px; height: 22px; border: 1px solid #ddd; line-height: 20px; cursor: pointer; font-style: normal; }
+
+.header > .content .miniCart > .cartcont > ul li .p-mincart-modify .set-num-in { float: left; width: 22px; height: 22px; padding: 0; margin: 0; border-radius: 0; border: 1px solid #ddd; background: #fff; border-left: none; border-right: none; line-height: 20px; text-align: center; }
+
+.header > .content .miniCart > .cartcont > ul li .p-mincart-delete { position: absolute; bottom: 8px; right: 0; padding: 10px 6px; }
+
+.header > .content .navbar-nav > li.current > a { color: #999; }
+
+.header > .content .navbar-nav > li.current > em { display: none; }
+
 #MyFocus { width: 700px; height: 560px; position: relative; overflow: hidden; }
 
 #MyFocus .dianul { list-style: none; float: left; width: 140px; height: 560px; padding: 0px; margin-bottom: 0px; margin: 0px; }
@@ -30,15 +52,13 @@ ul { margin: 0px; padding: 0px; }
 
 #MyFocus .dianul li.cur span { display: block; }
 
-#MyFocus .tuul { list-style: none; float: left; width: 560px; height: 560px; padding: 0px; margin-bottom: 0px; margin: 0px; position: relative; }
+#MyFocus .dianul li:last-child { margin-bottom: 0px; }
 
-#MyFocus .tuul li { display: none; }
-
-#MyFocus .tuul li.cur { display: block; }
+#MyFocus .tuul { list-style: none; float: left; width: 560px; height: 560px; padding: 0px; margin-bottom: 0px; margin: 0px; overflow: hidden; }
 
 #MyFocus .tuul li a { display: block; width: 560px; height: 560px; }
 
-#MyFocus .tuul li img { width: 560px; height: 560px; }
+#MyFocus .tuul li > img { width: 560px; height: 560px; }
 
 .product-info { padding-left: 28px; width: 580px; padding-top: 20px; }
 

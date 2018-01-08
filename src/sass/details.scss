@@ -24,6 +24,83 @@ ul{margin: 0px;padding: 0px;}
         text-decoration: none;
     }
 }
+
+.header>.content .miniCart>.cartcont>ul li {
+    position: relative;
+    height: 86px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+    a {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        color: #999;
+        text-decoration: none;
+        img {
+            display: block;
+            width: 70px;
+            height: 70px;
+            box-shadow: 0 0 3px rgba(0,0,0,0.3);
+        }
+        .p-minicart-info {
+            width: 100%;
+            height: 100%;
+            padding-left: 85px;
+            >h5 {
+                margin: 0 0 6px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+    .p-mincart-modify {
+        position: absolute;
+        bottom: 15px;
+        left: 85px;
+        width: 66px;
+        height: 22px;
+        text-align: center;
+        .p-mincart-act {
+            background: #f1f1f1;
+            float: left;
+            width: 22px;
+            height: 22px;
+            border: 1px solid #ddd;
+            line-height: 20px;
+            cursor: pointer;
+            font-style: normal;
+        }
+        .set-num-in {
+            float: left;
+            width: 22px;
+            height: 22px;
+            padding: 0;
+            margin: 0;
+            border-radius: 0;
+            border: 1px solid #ddd;
+            background: #fff;
+            border-left: none;
+            border-right: none;
+            line-height: 20px;
+            text-align: center;
+        }
+    }
+    .p-mincart-delete {
+        position: absolute;
+        bottom: 8px;
+        right: 0;
+        padding: 10px 6px;
+    }
+}
+.header > .content .navbar-nav > li.current > a {
+    color: #999;
+}
+.header > .content .navbar-nav > li.current > em{
+    display:none;
+}
 #MyFocus {
     width: 700px;
     height: 560px;
@@ -56,8 +133,13 @@ ul{margin: 0px;padding: 0px;}
                 height: 100%;
                 display: none;
             }
-            &.cur span {
-                display: block;
+            &.cur{
+                span {
+                    display: block;
+                }
+            }
+            &:last-child{
+                margin-bottom:0px;
             }
         }
     }
@@ -69,18 +151,21 @@ ul{margin: 0px;padding: 0px;}
         padding: 0px;
         margin-bottom: 0px;
         margin: 0px;
-        position: relative;
+        overflow:hidden;
         li {
-            display: none;
-            &.cur {
-                display: block;
-            }
+            // display: none;
+            // &.cur {
+            //     display: block;
+            // }
+            // &:first-child{
+            //     display:block;
+            // }
             a {
                 display: block;
                 width: 560px;
                 height: 560px;
             }
-            img {
+            >img {
                 width: 560px;
                 height: 560px;
             }
